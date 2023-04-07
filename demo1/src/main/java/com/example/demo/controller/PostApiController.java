@@ -40,6 +40,7 @@ public class PostApiController {
 		System.out.println(	reqdto.getPhoneNumber());
 		return reqdto;
 	}
+	
 	@GetMapping("/chat/{message}")
 	public String message(@PathVariable String message) {
 		System.out.println("message : " + message);
